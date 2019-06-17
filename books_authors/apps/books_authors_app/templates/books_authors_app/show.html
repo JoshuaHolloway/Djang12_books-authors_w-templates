@@ -11,15 +11,10 @@
   </head>
   <!-- ===================================================================== -->
   <body>
-      <a href="/users">Home</a>
+    <a href="/users">Home</a>
 
-      <h1>User {{user[0]['id']}}</h1>
-      <h4>Full Name:       {{user[0]['name']}}</h4>
-      <h4>Email:           {{user[0]['email']}}</h4>
-      <h4>Created at:      {{user[0]['created_at']}}</h4>
-      <h4>Last Updated at: {{user[0]['updated_at']}}</h4>
+    <h1>{{book.title}}</h1>
+    <h2>ID: {{book.id}}</h2>
 
-      <a href="/users/{{user[0]['id']}}/edit">Edit</a>
-      <a href="/users/{{user[0]['id']}}/delete">Delete</a>
   </body>
 </html>
