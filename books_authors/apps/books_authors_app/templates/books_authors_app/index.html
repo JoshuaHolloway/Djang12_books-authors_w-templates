@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Index!</title>
+    <title>Index.html</title>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     {% load static %}		<!-- added this line -->
     <link rel="stylesheet" href="{% static 'app_name/css/style.css' %}">
@@ -12,11 +12,27 @@
     <script src="{% static 'app_name/js/script.js' %}"></script>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <style type="text/css">
+      img {
+        height: 25px;
+      }
     </style>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   </head>
   <body>
     <h1>Hello!</h1>
     <img id="josh" src="{% static 'books_authors_app/images/lena.png' %}" />
+
+
+
+    <h1>Info From Server:</h1>
+    <p>Name: {{name}}</p>
+    <p>Color: {{favorite_color}}</p>
+    <p>Pets</p>
+    <ul>
+      {% for pet in pets %}
+        <li>{{pet}}</li>
+      {% endfor %}
+    </ul>
+
   </body>
 </html>

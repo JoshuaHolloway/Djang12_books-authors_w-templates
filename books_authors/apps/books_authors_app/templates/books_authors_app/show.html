@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Show</title>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <style type="text/css">
+    </style>
+  </head>
+  <!-- ===================================================================== -->
+  <body>
+      <a href="/users">Home</a>
+
+      <h1>User {{user[0]['id']}}</h1>
+      <h4>Full Name:       {{user[0]['name']}}</h4>
+      <h4>Email:           {{user[0]['email']}}</h4>
+      <h4>Created at:      {{user[0]['created_at']}}</h4>
+      <h4>Last Updated at: {{user[0]['updated_at']}}</h4>
+
+      <a href="/users/{{user[0]['id']}}/edit">Edit</a>
+      <a href="/users/{{user[0]['id']}}/delete">Delete</a>
+  </body>
+</html>
