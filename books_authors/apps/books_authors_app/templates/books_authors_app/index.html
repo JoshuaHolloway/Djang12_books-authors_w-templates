@@ -22,8 +22,6 @@
     <h1>Hello!</h1>
     <img id="josh" src="{% static 'books_authors_app/images/lena.png' %}" />
 
-
-
     <h1>Info From Server:</h1>
     <p>Name: {{name}}</p>
     <p>Color: {{favorite_color}}</p>
@@ -33,6 +31,39 @@
         <li>{{pet}}</li>
       {% endfor %}
     </ul>
+
+
+
+
+
+
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+            <h1 class="mb-3">All Users</h1>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Title</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                  {% for pet in pets %}
+                  <tr>
+                    <td>{{pet}}</td>
+                    <td>{{pet}}</td>
+                    <td>{{pet}}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+            </table>
+            <a href="/users/new">Add a new user</a>
+      </div>
+    </div>
+
+
 
   </body>
 </html>
