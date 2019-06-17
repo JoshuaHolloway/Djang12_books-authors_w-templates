@@ -50,11 +50,11 @@
                 </tr>
                 </thead>
                 <tbody>
-                  {% for pet in pets %}
+                  {% for book in books %}
                   <tr>
-                    <td>{{pet}}</td>
-                    <td>{{pet}}</td>
-                    <td>{{pet}}</td>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.title }}</td>
                   </tr>
                   {% endfor %}
                 </tbody>
@@ -62,8 +62,6 @@
             <a href="/users/new">Add a new user</a>
       </div>
     </div>
-
-
 
   </body>
 </html>

@@ -1,0 +1,31 @@
+In [2]: Book.objects.create(title="C#")
+Out[2]: Book: (C#)
+
+In [3]: Book.objects.create(title="Java")
+Out[3]: Book: (Java)
+
+In [4]: Book.objects.create(title="Python")
+Out[4]: Book: (Python)
+
+In [5]: Book.objects.create(title="PHP")
+Out[5]: Book: (PHP)
+
+In [6]: Book.objects.create(title="Ruby")
+Out[6]: Book: (Ruby)
+
+======================================================
+
+In [10]: Author.objects.create(name="Jane Austen")
+Out[10]: Author: (Jane Austen)
+
+In [11]: Author.objects.create(name="Emily Dickinson")
+Out[11]: Author: (Emily Dickinson)
+
+In [12]: Author.objects.create(name="Fyodor Dostoevsky")
+Out[12]: Author: (Fyodor Dostoevsky)
+
+In [13]: Author.objects.create(name="Bill Shakespeare")
+Out[13]: Author: (Bill Shakespeare)
+
+In [14]: Author.objects.create(name="Lau Tzu")
+Out[14]: Author: (Lau Tzu)
