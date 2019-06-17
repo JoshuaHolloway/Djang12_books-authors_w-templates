@@ -15,53 +15,108 @@
       img {
         height: 25px;
       }
+
+      main {
+          border: black 1px solid;
+
+          width: 98%;
+          margin: 0.5%;
+          align-items: center;
+          padding: 0.5%;
+          text-align: center;
+      }
+
+      table tr td {
+          width: 50px;
+          height: 50px;
+      }
+
+      .color1 {
+          background: blue;
+      }
+
+      .color2 {
+          background: red;
+      }
+
+      #submit-button, #submit-button-login {
+          background-color: red;
+          color: white;
+          width: 50%;
+          margin-left: 49%;
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+      }
+
+      label {
+          display: inline-block;
+      }
+
+      #first_name, #last_name,
+      #email,       #password, #password-confirm,
+      #email-login, #password-login {
+          border-color: black;
+          width: 50%;
+          float: right;
+      }
+
+      #left-col, #right-col {
+          width: 49%;
+          display: inline-block;
+          vertical-align: top;
+          padding: 0.5%;
+
+          <!-- background: blue;-->
+          <!-- opacity: 0.5;-->
+      }
     </style>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   </head>
   <body>
-    <h1>Hello!</h1>
-    <img id="josh" src="{% static 'books_authors_app/images/lena.png' %}" />
+    <!-- ------------------------------------------------------------------- -->
+    <main>
+      <div id="left-col">
+        <h1>Add a book</h1>
+          <form action='/users' method='post'>
+            <div class="form-group">
+              <label for="first_name">Title: </label>
+              <input type="text" id="first_name" name="first_name" class="form-control">
+            </div>
 
-    <h1>Info From Server:</h1>
-    <p>Name: {{name}}</p>
-    <p>Color: {{favorite_color}}</p>
-    <p>Pets</p>
-    <ul>
-      {% for pet in pets %}
-        <li>{{pet}}</li>
-      {% endfor %}
-    </ul>
+            <div class="form-group">
+              <label for="last_name">Description: </label>
+              <input type="text" id="last_name" name="last_name" class="form-control">
+            </div>
 
-
-
-
-
-
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-            <h1 class="mb-3">All Users</h1>
-            <table class="table table-striped">
+            <!-- submit-button -->
+            <input type='submit' id="submit-button" name="submit-button" value='Add' class="form-control"
+                   class="shadow-lg p-3 mb-5 bg-white rounded">
+          </form>
+        </div> <!-- left-col -->
+        <!-- ------------------------------------------------------------------------------------------------------- -->
+      <div id="right-col">
+        <div class="album py-5 bg-light">
+          <div class="container">
+              <table class="table table-striped">
                 <thead>
-                <tr>
+                  <tr>
                     <th>id</th>
                     <th>Title</th>
                     <th>Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                  {% for book in books %}
-                  <tr>
-                    <td>{{ book.id }}</td>
-                    <td>{{ book.title }}</td>
-                    <td> <a href="/books/{{book.id}}">View</a> </td>
                   </tr>
-                  {% endfor %}
-                </tbody>
-            </table>
-            <a href="/users/new">Add a new user</a>
-      </div>
-    </div>
-
+                  </thead>
+                  <tbody>
+                    {% for book in books %}
+                    <tr>
+                      <td>{{ book.id }}</td>
+                        <td>{{ book.title }}</td>
+                        <td> <a href="/books/{{book.id}}">View</a> </td>
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                </table>
+          </div>
+        </div>
+      </div> <!-- right-col-->
+    </main>
   </body>
 </html>
