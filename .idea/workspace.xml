@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb104869-3218-4251-b3d8-ab55b8be14e7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,14 +12,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35718933">
+    <splitter split-orientation="horizontal" split-proportion="0.33962265">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="23" />
+                <state relative-caret-position="264">
+                  <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -26,7 +27,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="506">
@@ -38,8 +39,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="15" column="60" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="60" />
+                <state relative-caret-position="192">
+                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="475">
+                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
                 </state>
               </provider>
             </entry>
@@ -51,8 +61,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
+                <state relative-caret-position="216">
+                  <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
@@ -69,6 +79,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_author.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="98">
+                  <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="44" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -79,10 +98,10 @@
       <find>form</find>
       <find>color1</find>
       <find>color</find>
-      <find>author</find>
       <find>___book___</find>
       <find>authors</find>
       <find>context</find>
+      <find>author</find>
       <find>add</find>
     </findStrings>
     <replaceStrings>
@@ -106,8 +125,9 @@
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_authors.html" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/index.html" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_author.html" />
-        <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/books.html" />
+        <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html" />
+        <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" />
       </list>
     </option>
@@ -284,6 +304,26 @@
           <line>42</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -331,31 +371,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Apps/Anaconda3/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="60" />
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_author.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        <state relative-caret-position="98">
+          <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Apps/Anaconda3/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        <state relative-caret-position="475">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
@@ -369,27 +416,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="264">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

@@ -60,7 +60,10 @@ def assign_author(request, book_id, author_id):
   # DEBUG
   print("Book-Title: " + str(book.title) + " has authors: " + str(book.authors.all()))
 
-  return redirect("/")
+  url_to_redirect_to = "books/" + str(book_id)
+  print(url_to_redirect_to)
+
+  return redirect("/books/" + str(book_id))
 # ======================================================================================================================
 def authors(request):
   return render(request, "books_authors_app/authors.html", {"authors": Author.objects.all()})

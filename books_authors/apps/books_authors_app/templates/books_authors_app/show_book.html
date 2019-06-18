@@ -26,13 +26,19 @@
   <body>
     <a href="/">Home</a>
 
-    <h1>{{book.title}}</h1>
     <h2>ID: {{book.id}}</h2>
     <h2>Title: {{book.title}}</h2>
     <h3>Description: {{book.description}}</h3>
 
+    <h3>(Co-)Authors: </h3>
+    {% for co_author in co_authors %}
+    <ol>
+      <li>{{ co_author.name }}</li>
+    </ol>
+    {% endfor %}
 
-    <!-- TODO: Un-hard code the /1 to the author id retrieved from the drop down menu -->
+
+    <!-- TODO: Un-hard-code the /1 to the author id retrieved from the drop down menu -->
     <!-- To do this: I need to grab author.id corresponding to the selected drop down option-->
     <!-- when the submit button is pressed and pass it into the url to replace /1-->
 
@@ -40,7 +46,7 @@
     {% csrf_token %}
       <!-- Drop-down menu -->
       <div class="form-group">
-        <label for="author">Author: </label>
+        <label for="author">Add Author: </label>
         <select name="author" id="author" class="form-control">
 
           {% for author in authors %}
