@@ -23,51 +23,32 @@ def specific_book_info(book_id):
     "co_authors": co_authors,
     "authors": authors}
 # ======================================================================================================================
-def show_book(request, my_val):
-  context = specific_book_info(my_val) # To pass into HTML
+def show_book(request, book_id):
+  context = specific_book_info(book_id) # To pass into HTML
   return render(request, "books_authors_app/show_book.html", context)
 # ======================================================================================================================
 def add_book(request):
-
   if request.method != "POST":
     print("ERROR: Expecting a POST request to be made to this route")
-
   title = request.POST['title']
   desc = request.POST["desc"]
   book = Book.objects.create(title=title, description=desc)
   context = specific_book_info(book.id) # To pass into HTML
-
-  # TODO:
-  #  1. Pass in co-authors of this specific book
-  #  2. Pass in all authors to be able to list them in drop down for addition
-  #  Model off of the way that this information is listed in the working SHOW_AUTHOR
-
-
-  # TODO: After done with this function (above two sub-TODO's) repeat create add_author() function
-
   return render(request, "books_authors_app/show_book.html", context)
 # ======================================================================================================================
 def assign_author(request, book_id, author_id):
-
   book = Book.objects.get(id=book_id)
   author = Author.objects.get(id=author_id)
   book.authors.add(author)
-
-  # DEBUG
-  print("Book-Title: " + str(book.title) + " has authors: " + str(book.authors.all()))
-
-  url_to_redirect_to = "books/" + str(book_id)
-  print(url_to_redirect_to)
-
+  print("Book-Title: " + str(book.title) + " has authors: " + str(book.authors.all())) # DEBUG
   return redirect("/books/" + str(book_id))
 # ======================================================================================================================
 def authors(request):
   return render(request, "books_authors_app/authors.html", {"authors": Author.objects.all()})
 # ======================================================================================================================
-def show_authors(request, my_val):
-
+def specific_author_info(author_id):
   # 1. Specific author
-  author = Author.objects.get(id=my_val)
+  author = Author.objects.get(id=author_id)
 
   # 2. List of all books this author has written/co-written
   books_authored = author.books.all()
@@ -76,16 +57,22 @@ def show_authors(request, my_val):
   books = Book.objects.all()
 
   # To pass into HTML
-  context = {
+  return {
     "author": author,
     "books_authored": books_authored,
     "books": books}
-
-  if request.method == "GET":
-    print("a GET request is being made to this route")
-  if request.method == "POST":
-    print("a POST request is being made to this route")
-
+# ======================================================================================================================
+def show_authors(request, author_id):
+  context = specific_author_info(author_id) # To pass into html
+  return render(request, "books_authors_app/show_author.html", context)
+# ======================================================================================================================
+def add_author(request):
+  if request.method != "POST":
+    print("ERROR: Expecting a POST request to be made to this route")
+  name = request.POST['name']
+  notes = request.POST["notes"]
+  author = Author.objects.create(name=name, notes=notes)
+  context = specific_author_info(author.id) # To pass into HTML
   return render(request, "books_authors_app/show_author.html", context)
 # ======================================================================================================================
 def assign_book(request, author_id, book_id):
