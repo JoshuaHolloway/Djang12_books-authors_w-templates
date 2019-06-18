@@ -3,16 +3,12 @@ from .models import Book, Author
 # ======================================================================================================================
 # Create your views here.
 def books(request):
-
   context = {"books": Book.objects.all()}
-
   return render(request, "books_authors_app/books.html", context)
-  # return render(request, "books_authors_app/index.html")
 # ======================================================================================================================
-def show_book(request, my_val):
-
+def specific_book_info(book_id):
   # 1. Specific book
-  book = Book.objects.get(id=my_val)
+  book = Book.objects.get(id=book_id)
 
   # 2. List of all (co-)authors of this book
   #books_authored = author.books.all() # this is how it is done in show_author()
@@ -22,33 +18,33 @@ def show_book(request, my_val):
   authors = Author.objects.all()
 
   # To pass into HTML
-  context = {
+  return {
     "book": book,
     "co_authors": co_authors,
     "authors": authors}
-
+# ======================================================================================================================
+def show_book(request, my_val):
+  context = specific_book_info(my_val) # To pass into HTML
   return render(request, "books_authors_app/show_book.html", context)
 # ======================================================================================================================
 def add_book(request):
-  if request.method == "GET":
-    print("a GET request is being made to this route")
-  if request.method == "POST":
-    print("a POST request is being made to this route")
-    title = request.POST['title']
-    desc = request.POST["desc"]
-    book = Book.objects.create(title=title, description=desc)
-    print(Book.objects.all())
 
-  # context = {"book": Book.objects.get(id=my_val)}
-  context = {"book": book}
+  if request.method != "POST":
+    print("ERROR: Expecting a POST request to be made to this route")
+
+  title = request.POST['title']
+  desc = request.POST["desc"]
+  book = Book.objects.create(title=title, description=desc)
+  context = specific_book_info(book.id) # To pass into HTML
 
   # TODO:
-  #  1. Pass in Authors of this specific book
+  #  1. Pass in co-authors of this specific book
   #  2. Pass in all authors to be able to list them in drop down for addition
   #  Model off of the way that this information is listed in the working SHOW_AUTHOR
 
 
-  # return HttpResponse("books/" + str(my_val))
+  # TODO: After done with this function (above two sub-TODO's) repeat create add_author() function
+
   return render(request, "books_authors_app/show_book.html", context)
 # ======================================================================================================================
 def assign_author(request, book_id, author_id):
