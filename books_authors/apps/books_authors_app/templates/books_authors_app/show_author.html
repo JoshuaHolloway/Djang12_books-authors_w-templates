@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>show.html</title>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <style type="text/css">
+      #submit-button {
+        background-color: red;
+        color: white;
+        width: 50%;
+        margin-left: 49%;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+      }
+
+      #book {
+        border-color: black;
+        width: 50%;
+        float: right;
+      }
+    </style>
+  </head>
+  <!-- ===================================================================== -->
+  <body>
+    <a href="/">Home</a>
+
+    <h2>ID: {{author.id}}</h2>
+    <h2>Name: {{author.name}}</h2>
+    <h3>Description: {{author.description}}</h3>
+    <h3>Books Author has (Co-)Written: </h3>
+    {% for book in books_authored %}
+    <ol>
+      <li>{{ book.title }}</li>
+    </ol>
+    {% endfor %}
+
+    <!-- TODO: Un-hard code the /1 to the book id retrieved from the drop down menu -->
+    <!-- To do this: I need to grab book.id corresponding to the selected drop down option-->
+    <!-- when the submit button is pressed and pass it into the url to replace /1-->
+
+<!--    <form action='/authors/assign_book/{{author.id}}/1' method='post'>-->
+    <form action='/authors/assign_book/2/3' method='post'>
+    {% csrf_token %}
+      <!-- Drop-down menu -->
+      <div class="form-group">
+        <label for="book">Add Book: </label>
+        <select name="book" id="book" class="form-control">
+
+          {% for book in books %}
+            <option value={{book.name}}>{{book.title}}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+
+      <!-- submit-button -->
+      <input type='submit' id="submit-button" value='Submit!' class="form-control"
+        class="shadow-lg p-3 mb-5 bg-white rounded">
+    </form>
+
+  </body>
+</html>
