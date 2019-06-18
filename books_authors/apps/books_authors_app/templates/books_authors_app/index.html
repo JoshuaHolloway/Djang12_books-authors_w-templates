@@ -76,7 +76,8 @@
     <main>
       <div id="left-col">
         <h1>Add a book</h1>
-          <form action='/users' method='post'>
+          <form action='/books/add' method='post'>
+            {% csrf_token %}
             <div class="form-group">
               <label for="first_name">Title: </label>
               <input type="text" id="first_name" name="first_name" class="form-control">

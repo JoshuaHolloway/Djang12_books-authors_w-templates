@@ -29,3 +29,10 @@ Out[13]: Author: (Bill Shakespeare)
 
 In [14]: Author.objects.create(name="Lau Tzu")
 Out[14]: Author: (Lau Tzu)
+
+
+Skilled Nursing
+1. The Villages at Souther Hills
+2. Inverness
+3. University Village Retirement Community
+4. Adams PARC Post Acute
