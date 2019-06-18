@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>index.html</title>
+    <title>authors.html</title>
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-    {% load static %}		<!-- added this line -->
+    {% load static %}  <!-- added this line -->
     <link rel="stylesheet" href="{% static 'app_name/css/style.css' %}">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -66,7 +66,7 @@
     <!-- ------------------------------------------------------------------- -->
     <main>
       <div id="left-col">
-        <h1>Add a Book</h1>
+        <h1>Add an Author</h1>
           <form action='/books/add' method='post'>
             {% csrf_token %}
             <div class="form-group">
@@ -84,8 +84,8 @@
                    class="shadow-lg p-3 mb-5 bg-white rounded">
           </form>
 
-        <!-- link to authors page -->
-        <a href="/authors">Authors</a>
+          <!-- link to books page -->
+          <a href="/">Books</a>
         </div> <!-- left-col -->
         <!-- ------------------------------------------------------------------------------------------------------- -->
       <div id="right-col">

@@ -39,7 +39,6 @@ def add(request):
 # ======================================================================================================================
 def assign_author(request, book_id, author_id):
 
-  # TODO: Apply the sql queries to assign author to book
   book = Book.objects.get(id=book_id)
   author = Author.objects.get(id=author_id)
   book.authors.add(author)
@@ -48,3 +47,6 @@ def assign_author(request, book_id, author_id):
   print("Book-Title: " + str(book.title) + " has authors: " + str(book.authors.all()))
 
   return redirect("/")
+# ======================================================================================================================
+def authors(request):
+  return render(request, "books_authors_app/authors.html")
