@@ -11,7 +11,7 @@ def index(request):
 # ======================================================================================================================
 def show(request, my_val):
 
-  context = {"book": Book.objects.get(id=my_val)}
+  context = {"book": Book.objects.get(id=my_val), "authors": Author.objects.all()}
 
   if request.method == "GET":
     print("a GET request is being made to this route")
@@ -32,7 +32,7 @@ def add(request):
     print(Book.objects.all())
 
   # context = {"book": Book.objects.get(id=my_val)}
-  context = {"book": book}
+  context = {"book": book,}
 
   # return HttpResponse("books/" + str(my_val))
   return render(request, "books_authors_app/show.html", context)
