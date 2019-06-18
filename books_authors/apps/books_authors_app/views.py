@@ -11,14 +11,22 @@ def books(request):
 # ======================================================================================================================
 def show_book(request, my_val):
 
-  context = {"book": Book.objects.get(id=my_val), "authors": Author.objects.all()}
+  # 1. Specific book
+  book = Book.objects.get(id=my_val)
 
-  if request.method == "GET":
-    print("a GET request is being made to this route")
-  if request.method == "POST":
-    print("a POST request is being made to this route")
+  # 2. List of all (co-)authors of this book
+  #books_authored = author.books.all() # this is how it is done in show_author()
+  co_authors = book.authors.all()
 
-  # return HttpResponse("books/" + str(my_val))
+  # 3. All authors (to be able to select from them in the drop-down menu)
+  authors = Author.objects.all()
+
+  # To pass into HTML
+  context = {
+    "book": book,
+    "co_authors": co_authors,
+    "authors": authors}
+
   return render(request, "books_authors_app/show_book.html", context)
 # ======================================================================================================================
 def add_book(request):
@@ -37,6 +45,7 @@ def add_book(request):
   # TODO:
   #  1. Pass in Authors of this specific book
   #  2. Pass in all authors to be able to list them in drop down for addition
+  #  Model off of the way that this information is listed in the working SHOW_AUTHOR
 
 
   # return HttpResponse("books/" + str(my_val))
@@ -58,24 +67,26 @@ def authors(request):
 # ======================================================================================================================
 def show_authors(request, my_val):
 
+  # 1. Specific author
   author = Author.objects.get(id=my_val)
-  print(author.name)
 
-  # Grab list of all books this author has written/co-written
+  # 2. List of all books this author has written/co-written
   books_authored = author.books.all()
 
-  context = {"author": author, "books_authored": books_authored, "books": Book.objects.all()}
-  print(context['author'])
+  # 3. All books to be able to select from them in the drop-down
+  books = Book.objects.all()
 
-
-
+  # To pass into HTML
+  context = {
+    "author": author,
+    "books_authored": books_authored,
+    "books": books}
 
   if request.method == "GET":
     print("a GET request is being made to this route")
   if request.method == "POST":
     print("a POST request is being made to this route")
 
-  # return HttpResponse("books/" + str(my_val))
   return render(request, "books_authors_app/show_author.html", context)
 # ======================================================================================================================
 def assign_book(request, author_id, book_id):

@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb104869-3218-4251-b3d8-ab55b8be14e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/books.html" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/books.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +11,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5117139">
+    <splitter split-orientation="horizontal" split-proportion="0.35718933">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
@@ -30,10 +26,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1944">
+                <state relative-caret-position="506">
                   <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
                 </state>
               </provider>
@@ -55,8 +51,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+                <state relative-caret-position="60">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
                 </state>
               </provider>
             </entry>
@@ -261,7 +257,7 @@
     <frame x="-8" y="-8" width="1840" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09988901" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14705883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -286,7 +282,7 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py</url>
           <line>42</line>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -335,13 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -370,16 +359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/books.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -390,10 +369,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+        <state relative-caret-position="60">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
