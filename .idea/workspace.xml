@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb104869-3218-4251-b3d8-ab55b8be14e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/migrations/0002_auto_20190618_0718.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="bb104869-3218-4251-b3d8-ab55b8be14e7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +11,7 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.721564">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.41694352">
+        <splitter split-orientation="vertical" split-proportion="0.56546766">
           <split-first>
             <leaf>
               <file pinned="false" current-in-tab="false">
@@ -45,8 +38,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="48">
-                      <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+                    <state relative-caret-position="216">
+                      <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
                     </state>
                   </provider>
                 </entry>
@@ -226,7 +219,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="906" y="0" width="926" height="993" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.04954955" />
@@ -237,7 +229,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19279908" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19279908" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30804598" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -331,8 +323,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="73" column="42" selection-start-line="73" selection-start-column="42" selection-end-line="73" selection-end-column="42" />
+        <state relative-caret-position="216">
+          <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
         </state>
       </provider>
     </entry>
