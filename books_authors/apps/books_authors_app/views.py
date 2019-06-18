@@ -49,4 +49,4 @@ def assign_author(request, book_id, author_id):
   return redirect("/")
 # ======================================================================================================================
 def authors(request):
-  return render(request, "books_authors_app/authors.html")
+  return render(request, "books_authors_app/authors.html", {"authors": Author.objects.all()})
