@@ -2,7 +2,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-  url(r'^$', views.index),
+  url(r'^$', views.books),
   url(r'^authors$', views.authors),
   url(r'^books/add$', views.add),
   url(r'^books/(?P<my_val>\d+)$', views.show),   # e.g., localhost:8000/books/23

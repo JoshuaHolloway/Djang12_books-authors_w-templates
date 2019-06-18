@@ -2,11 +2,11 @@ from django.shortcuts import render, HttpResponse, redirect
 from .models import Book, Author
 # ======================================================================================================================
 # Create your views here.
-def index(request):
+def books(request):
 
   context = {"books": Book.objects.all()}
 
-  return render(request, "books_authors_app/index.html", context)
+  return render(request, "books_authors_app/books.html", context)
   # return render(request, "books_authors_app/index.html")
 # ======================================================================================================================
 def show(request, my_val):
