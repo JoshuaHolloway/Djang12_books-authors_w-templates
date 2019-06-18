@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from .models import Book, Author
 # ======================================================================================================================
 # Create your views here.
@@ -12,6 +12,11 @@ def index(request):
 def show(request, my_val):
 
   context = {"book": Book.objects.get(id=my_val)}
+
+  if request.method == "GET":
+    print("a GET request is being made to this route")
+  if request.method == "POST":
+    print("a POST request is being made to this route")
 
   # return HttpResponse("books/" + str(my_val))
   return render(request, "books_authors_app/show.html", context)
@@ -29,7 +34,17 @@ def add(request):
   # context = {"book": Book.objects.get(id=my_val)}
   context = {"book": book}
 
-
   # return HttpResponse("books/" + str(my_val))
   return render(request, "books_authors_app/show.html", context)
 # ======================================================================================================================
+def assign_author(request, book_id, author_id):
+
+  # TODO: Apply the sql queries to assign author to book
+  book = Book.objects.get(id=book_id)
+  author = Author.objects.get(id=author_id)
+  book.authors.add(author)
+
+  # DEBUG
+  print("Book-Title: " + str(book.title) + " has authors: " + str(book.authors.all()))
+
+  return redirect("/")

@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <style type="text/css">
+      #submit-button {
+        background-color: red;
+        color: white;
+        width: 50%;
+        margin-left: 49%;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+      }
+
+      #author {
+        border-color: black;
+        width: 50%;
+        float: right;
+      }
     </style>
   </head>
   <!-- ===================================================================== -->
@@ -17,5 +30,25 @@
     <h2>ID: {{book.id}}</h2>
     <h2>Title: {{book.title}}</h2>
     <h3>Description: {{book.description}}</h3>
+
+
+
+    <!-- TODO: Un-hard code the /1 to the author id retrieved from the drop down menu -->
+    <form action='/books/assign_author/{{book.id}}/1' method='post'>
+    {% csrf_token %}
+      <!-- Drop-down menu -->
+      <div class="form-group">
+        <label for="author">Author: </label>
+        <select name="author" id="author" class="form-control">
+          <option value="Jane Austin">Jane Austin</option>
+          <option value="Emily Dickenson">Emily Dickenson</option>
+        </select>
+      </div>
+
+      <!-- submit-button -->
+      <input type='submit' id="submit-button" value='Submit!' class="form-control"
+        class="shadow-lg p-3 mb-5 bg-white rounded">
+    </form>
+
   </body>
 </html>
