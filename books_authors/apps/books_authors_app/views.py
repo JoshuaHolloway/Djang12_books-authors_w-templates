@@ -9,7 +9,7 @@ def books(request):
   return render(request, "books_authors_app/books.html", context)
   # return render(request, "books_authors_app/index.html")
 # ======================================================================================================================
-def show(request, my_val):
+def show_book(request, my_val):
 
   context = {"book": Book.objects.get(id=my_val), "authors": Author.objects.all()}
 
@@ -19,9 +19,9 @@ def show(request, my_val):
     print("a POST request is being made to this route")
 
   # return HttpResponse("books/" + str(my_val))
-  return render(request, "books_authors_app/show.html", context)
+  return render(request, "books_authors_app/show_book.html", context)
 # ======================================================================================================================
-def add(request):
+def add_book(request):
   if request.method == "GET":
     print("a GET request is being made to this route")
   if request.method == "POST":
@@ -32,10 +32,15 @@ def add(request):
     print(Book.objects.all())
 
   # context = {"book": Book.objects.get(id=my_val)}
-  context = {"book": book,}
+  context = {"book": book}
+
+  # TODO:
+  #  1. Pass in Authors of this specific book
+  #  2. Pass in all authors to be able to list them in drop down for addition
+
 
   # return HttpResponse("books/" + str(my_val))
-  return render(request, "books_authors_app/show.html", context)
+  return render(request, "books_authors_app/show_book.html", context)
 # ======================================================================================================================
 def assign_author(request, book_id, author_id):
 
