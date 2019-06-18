@@ -21,10 +21,14 @@ def add(request):
     print("a GET request is being made to this route")
   if request.method == "POST":
     print("a POST request is being made to this route")
-    user = Book.objects.create(title="josh")
+    title = request.POST['title']
+    desc = request.POST["desc"]
+    book = Book.objects.create(title=title, description=desc)
     print(Book.objects.all())
 
-  #context = {"book": Book.objects.get(id=my_val)}
+  # context = {"book": Book.objects.get(id=my_val)}
+  context = {"book": book}
+
 
   # return HttpResponse("books/" + str(my_val))
   return render(request, "books_authors_app/show.html", context)

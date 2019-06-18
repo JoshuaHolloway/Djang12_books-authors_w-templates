@@ -31,13 +31,8 @@
           height: 50px;
       }
 
-      .color1 {
-          background: blue;
-      }
-
-      .color2 {
-          background: red;
-      }
+      .color1 { background: blue; }
+      .color2 { background: red; }
 
       #submit-button, #submit-button-login {
           background-color: red;
@@ -47,13 +42,9 @@
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
       }
 
-      label {
-          display: inline-block;
-      }
+      label { display: inline-block; }
 
-      #first_name, #last_name,
-      #email,       #password, #password-confirm,
-      #email-login, #password-login {
+      .field {
           border-color: black;
           width: 50%;
           float: right;
@@ -79,13 +70,13 @@
           <form action='/books/add' method='post'>
             {% csrf_token %}
             <div class="form-group">
-              <label for="first_name">Title: </label>
-              <input type="text" id="first_name" name="first_name" class="form-control">
+              <label for="title">Title: </label>
+              <input type="text" class="field" name="title" class="form-control">
             </div>
 
             <div class="form-group">
-              <label for="last_name">Description: </label>
-              <input type="text" id="last_name" name="last_name" class="form-control">
+              <label for="desc">Description: </label>
+              <input type="text" class="field" name="desc" class="form-control">
             </div>
 
             <!-- submit-button -->
