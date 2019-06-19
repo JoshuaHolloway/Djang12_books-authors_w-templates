@@ -36,11 +36,17 @@ def add_book(request):
   context = specific_book_info(book.id) # To pass into HTML
   return render(request, "books_authors_app/show_book.html", context)
 # ======================================================================================================================
-def assign_author(request, book_id, author_id):
+def assign_author(request, book_id):
+  author_id = request.POST['author']
+
+  return redirect("/books/assign_author/" + str(book_id) + "/" + str(author_id))
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+def assign_author_redirected(request, book_id, author_id):
   book = Book.objects.get(id=book_id)
   author = Author.objects.get(id=author_id)
   book.authors.add(author)
   print("Book-Title: " + str(book.title) + " has authors: " + str(book.authors.all())) # DEBUG
+
   return redirect("/books/" + str(book_id))
 # ======================================================================================================================
 def authors(request):

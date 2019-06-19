@@ -42,7 +42,7 @@
     <!-- To do this: I need to grab author.id corresponding to the selected drop down option-->
     <!-- when the submit button is pressed and pass it into the url to replace /1-->
 
-    <form action='/books/assign_author/{{book.id}}/1' method='post'>
+    <form action='/books/assign_author/{{book.id}}' method='post'>
     {% csrf_token %}
       <!-- Drop-down menu -->
       <div class="form-group">
@@ -50,7 +50,7 @@
         <select name="author" id="author" class="form-control">
 
           {% for author in authors %}
-            <option value={{author.name}}>{{author.name}}</option>
+            <option value={{author.id}}>{{author.name}}</option>
           {% endfor %}
         </select>
       </div>
