@@ -41,7 +41,7 @@
     <!-- when the submit button is pressed and pass it into the url to replace /1-->
 
 <!--    <form action='/authors/assign_book/{{author.id}}/1' method='post'>-->
-    <form action='/authors/assign_book/{{author.id}}/3' method='post'>
+    <form action='/authors/assign_book/{{author.id}}' method='post'>
     {% csrf_token %}
       <!-- Drop-down menu -->
       <div class="form-group">
@@ -49,11 +49,10 @@
         <select name="book" id="book" class="form-control">
 
           {% for book in books %}
-            <option value={{book.name}}>{{book.title}}</option>
+            <option value={{book.id}}>{{book.title}}</option>
           {% endfor %}
         </select>
       </div>
-
 
       <!-- submit-button -->
       <input type='submit' id="submit-button" value='Submit!' class="form-control"
