@@ -85,7 +85,6 @@ def assign_book(request, author_id):
   book_id = request.POST['book']
 
   return redirect("/author/assign_book/" + str(author_id) + "/" + str(book_id))
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 def assign_book_redirected(request, author_id, book_id):
 
