@@ -26,21 +26,16 @@
   <body>
     <a href="/">Home</a>
 
-    <h2>ID: {{author.id}}</h2>
-    <h2>Name: {{author.name}}</h2>
-    <h3>Notes: {{author.notes}}</h3>
-    <h3>Books Author has (Co-)Written: </h3>
+    <h2><b>ID:</b>    {{author.id}}</h2>
+    <h2><b>Name:</b>  {{author.name}}</h2>
+    <h3><b>Notes:</b> {{author.notes}}</h3>
+    <h3><b>Books Author has (Co-)Written:</b> </h3>
     {% for book in books_authored %}
     <ol>
       <li>{{ book.title }}</li>
     </ol>
     {% endfor %}
 
-    <!-- TODO: Un-hard code the /1 to the book id retrieved from the drop down menu -->
-    <!-- To do this: I need to grab book.id corresponding to the selected drop down option-->
-    <!-- when the submit button is pressed and pass it into the url to replace /1-->
-
-<!--    <form action='/authors/assign_book/{{author.id}}/1' method='post'>-->
     <form action='/authors/assign_book/{{author.id}}' method='post'>
     {% csrf_token %}
       <!-- Drop-down menu -->

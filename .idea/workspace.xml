@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bb104869-3218-4251-b3d8-ab55b8be14e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/migrations/0002_auto_20190618_0718.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_author.html" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_author.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,14 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44490036">
+    <splitter split-orientation="horizontal" split-proportion="0.49756774">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+                <state relative-caret-position="240">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -29,8 +35,11 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1536">
-                  <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+                <state relative-caret-position="565">
+                  <caret line="91" column="30" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="30" />
+                  <folding>
+                    <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -44,11 +53,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1368">
-                  <caret line="57" selection-start-line="57" selection-end-line="57" />
+                <state relative-caret-position="457">
+                  <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -72,8 +81,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/books.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+                <state relative-caret-position="192">
+                  <caret line="8" column="64" lean-forward="true" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
                   <folding>
                     <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
                   </folding>
@@ -84,8 +93,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_author.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="146">
-                  <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+                <state relative-caret-position="229">
+                  <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -126,19 +135,18 @@
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_authors.html" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/index.html" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/books.html" />
-        <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html" />
+        <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html" />
-        <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py" />
         <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_author.html" />
+        <option value="$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="5" />
-    <option name="y" value="-12" />
-    <option name="width" value="1938" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1734" />
+    <option name="height" value="1405" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -148,64 +156,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Django-12_books-authors_w-templates_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-12_books-authors_w-templates_" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-12_books-authors_w-templates_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-12_books-authors_w-templates_" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-12_books-authors_w-templates_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-12_books-authors_w-templates_" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-12_books-authors_w-templates_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-12_books-authors_w-templates_" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-12_books-authors_w-templates_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-12_books-authors_w-templates_" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-12_books-authors_w-templates_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-12_books-authors_w-templates_" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors_app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django-12_books-authors_w-templates_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django-12_books-authors_w-templates_" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors" type="462c0819:PsiDirectoryNode" />
-              <item name="books_authors" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Django-20_Semi-Restful-TV-Shows/tv_shows" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
@@ -243,6 +201,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/books_authors/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -263,8 +222,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560800906781</updated>
+      <workItem from="1561336246224" duration="1741000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1741000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,26 +239,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1840" height="1002" extended-state="6" />
+    <frame x="-7" y="0" width="1648" height="1335" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05327414" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17065491" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1816092" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18121363" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30804598" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32988507" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30114943" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917705" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917705" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.30091438" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32988507" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -307,6 +278,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Django_12_books_authors_w_templates$manage.coverage" NAME="manage Coverage Results" MODIFIED="1561337945128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/books_authors" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/books_authors/books_authors/settings.py">
@@ -350,37 +324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1776">
@@ -391,10 +334,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/authors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="91" column="30" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/books.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        <state relative-caret-position="192">
+          <caret line="8" column="64" lean-forward="true" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
           </folding>
@@ -403,8 +356,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_author.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state relative-caret-position="229">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books_authors/apps/books_authors_app/templates/books_authors_app/show_book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
         </state>
       </provider>
     </entry>

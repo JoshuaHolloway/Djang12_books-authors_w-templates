@@ -17,5 +17,4 @@ urlpatterns = [
   url(r'^authors/(?P<author_id>\d+)$', views.show_author),   # e.g., localhost:8000/authors/23
   url(r'^authors/assign_book/(?P<author_id>\d+)', views.assign_book),
   url(r'^author/assign_book/(?P<author_id>\d+)/(?P<book_id>\d+)', views.assign_book_redirected)
-
 ]

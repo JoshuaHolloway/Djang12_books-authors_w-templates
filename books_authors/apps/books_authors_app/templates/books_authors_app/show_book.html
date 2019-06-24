@@ -26,11 +26,11 @@
   <body>
     <a href="/">Home</a>
 
-    <h2>ID: {{book.id}}</h2>
-    <h2>Title: {{book.title}}</h2>
-    <h3>Description: {{book.description}}</h3>
+    <h2><b>ID:</b>          {{book.id}}</h2>
+    <h2><b>Title:</b>       {{book.title}}</h2>
+    <h3><b>Description:</b> {{book.description}}</h3>
 
-    <h3>(Co-)Authors: </h3>
+    <h3><b>(Co-)Authors:</b> </h3>
     {% for co_author in co_authors %}
     <ol>
       <li>{{ co_author.name }}</li>
